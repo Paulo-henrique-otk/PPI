@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="perguntas-frequentes.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form class="content" method="POST" id="form">
+             <div class="none " id="js-none">
+               <div class="pergunta "><div class="textm" id="pergunta"></div></div>
+               <div class="resposta" id="primeira"><div class="textm"> <input type="radio" name="resposta" id="value1" onfocus="AcertoErro('input1')"> <div id="resposta1"></div></div></div>
+               <div class="resposta " id="segunda"><div class="textm"> <input type="radio" name="resposta" id="value2"  onfocus="AcertoErro('input2')" > <div id="resposta2"></div></div></div>
+               <div class="resposta" id="terceira"><div class="textm"> <input type="radio" name="resposta" id="value3"  onfocus="AcertoErro('input3')"> <div id="resposta3"></div></div></div>
+               <button class="button" id="submitb" onclick="verificarResultado()" type="button">Responder</button>
+               <p class="respostaC" id="respostaC"></p>
+                </form>
+            </div>
+        </div>
+            <div class="col">
+               <div class="coluna">
+                   <p class="textp">Painel do Jogador</p>
+                   <div class="none" id="painel-none">
+                   <p>Perguntas=<span id="perguntaad">0</span></p>
+                  <p>Acertos=<span id="acerto">0</span></p>
+                  <p>Erros=<span id="erro">0</span></p>
+                  
+                  <button class="buttonplay" id="buttonC" onclick="alternativas();adicionar();resetarCores();resetarbuttonC()">Continuar Jogando</button>
+                </div>
+                
+                  <button class="buttonplay" id="buttonplay" onclick="play();alternativas()">Jogar</button>
+               </div>
+             </div>
+        </div>
+        
+    </div>
+    <script src="play.js"></script>
+    <script src="Objects.js " ></script>
+    <script src="adicionar.js"></script>
+
+</body>
+</html>

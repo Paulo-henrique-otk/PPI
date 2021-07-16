@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-weight: bold;
+    font-family: 'Festive', cursive;
+    background-image: linear-gradient(190deg, #005058 0, #00505d 3.57%, #004f62 7.14%, #004f66 10.71%, #004e6a 14.29%, #004c6d 17.86%, #004b6f 21.43%, #0a4970 25%, #1f4871 28.57%, #2d4670 32.14%, #39436f 35.71%, #43416c 39.29%, #4c3f69 42.86%, #533c65 46.43%, #5a3a61 50%, #60385c 53.57%, #653657 57.14%, #683551 60.71%, #6b344b 64.29%, #6d3345 67.86%, #6e333f 71.43%, #6e3439 75%, #6d3533 78.57%, #6c372e 82.14%, #6a3829 85.71%, #673a24 89.29%, #633d20 92.86%, #5f3f1d 96.43%, #5a411b 100%);
+}
+.content{
+    height: 420px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    box-shadow: -2px 2px 2px 2px black;
+    background-color: springgreen;
+}
+.none{
+  display: none;
+}
+.pergunta{
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    border: 2px solid black;
+    margin-top: 30px;
+    height: 100px;
+    align-items: center;
+}
+.textm{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+input[type=radio]{
+    margin-right: 5px;
+}
+.resposta{
+    width: 80%;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: 2px solid black;
+}
+.button{
+    width: 30%;
+    margin-left:190px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-weight: bold;
+}
+.coluna{
+    margin-top: 20px;
+    width:300px;
+    height: 420px;
+    border: 2px solid black;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: red;
+    color: wheat;
+    padding: 5px;
+}
+.textp{
+    text-align: center;
+    margin-top: 10px;
+}
+.buttonplay{
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 150px;
+    margin-left:90px;
+    box-shadow: -2px 2px 2px 2px black;
+    font-weight: bold;
+}
+.respostaC{
+    margin-left: 150px;
+    margin-top: 30px;
+}
