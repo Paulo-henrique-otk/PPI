@@ -1,3 +1,5 @@
+
+alert("Seja Bem Vindo,Aperte no Botão Jogar para Iniciar 🥇");
 const Alternativa =   {
     resposta:"Resposta",
     flag:true
@@ -234,6 +236,12 @@ let erro = document.getElementById("erro");
 erro.innerHTML = errocont;
 errocont+=1;
 }
+var cont = 1;
+function adicionar(){
+var perguntaad = document.getElementById("perguntaad");
+perguntaad.innerHTML= cont;
+cont+=1;
+}
 
 function submitNone(){
 let submitb = document.getElementById("submitb");
@@ -253,11 +261,13 @@ arrayverificador[0].style.backgroundColor = "green";
 addContAcerto();
 submitNone();
 buttonCBlock();
+adicionar();
 }else{
 arrayverificador[0].style.backgroundColor = "red";  
 addContError();
 buttonCBlock();
 submitNone();
 respostaCerta();
+adicionar();
 }
 }
